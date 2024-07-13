@@ -1,0 +1,24 @@
+{
+  "name": "@apollotv/sdk",
+  "version": "0.1.0",
+  "module": "./src/index.ts",
+  "type": "module",
+  "description": "SDK for ApolloTV Plugins",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "author": {
+    "name": "Tommy",
+    "url": "https://github.com/tdanks2000"
+  },
+  "repository": {
+    "url": "https://github.com/ApolloTV-team/sdk"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
