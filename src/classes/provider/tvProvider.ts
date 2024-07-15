@@ -2,7 +2,7 @@ import type {
   ProviderAnimeEpisodeResponse,
   ProviderID,
   ProviderSeasonResponse,
-} from "../../@types/plugins/types";
+} from "../../@types";
 import { BaseProvider } from "./baseProvider";
 
 export abstract class TvProvider extends BaseProvider {

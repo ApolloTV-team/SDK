@@ -1,7 +1,8 @@
-import type { ProviderMetadata } from "../@types/plugins/types";
+import type { PluginMetadata } from "../@types";
+import type { Request } from "../utils";
 
 export abstract class BasePlugin {
-  abstract readonly metadata: ProviderMetadata;
+  abstract readonly metadata: PluginMetadata;
 
   /**
    * This method is responsible for initializing the plugin.
@@ -18,4 +19,20 @@ export abstract class BasePlugin {
    * @return {void} This function does not return anything.
    */
   abstract destroy(): void;
+
+  /**
+   * This method is responsible for rendering the plugin's settings interface.
+   * It is called when the plugin's settings panel is opened.
+   *
+   * @return {JSX.Element} The JSX element representing the plugin's settings interface.
+   */
+  abstract settings(): JSX.Element;
+
+  /**
+   * This property holds the request object that is used by the plugin.
+   * It is a protected property, meaning it can only be accessed within the plugin class itself.
+   *
+   * @type {Request} The request object used by the plugin.
+   */
+  protected abstract request: Request;
 }

@@ -1,4 +1,5 @@
 import type {
+  ProviderExtraSupport,
   ProviderID,
   ProviderInfoResponse,
   ProviderPagination,
@@ -12,6 +13,17 @@ import type {
 import { BasePlugin } from "../basePlugin";
 
 export abstract class BaseProvider extends BasePlugin {
+  /**
+   * This method is responsible for providing extra support for the provider.
+   *
+   * @return {Array<ProviderExtraSupport>} An array of extra support options for the provider.
+   * @see ProviderExtraSupport
+   * @default []
+   * @example
+   * return [ProviderExtraSupport.discover];
+   */
+  abstract readonly extra_support?: Array<ProviderExtraSupport>;
+
   /**
    * This method is responsible for performing a search using the plugin's search provider.
    *

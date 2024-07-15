@@ -1,7 +1,4 @@
-import type {
-  ProviderAnimeEpisodeResponse,
-  ProviderID,
-} from "../../@types/plugins/types";
+import type { ProviderID, ProviderAnimeEpisodeResponse } from "../../@types";
 import { BaseProvider } from "./baseProvider";
 
 export abstract class AnimeProvider extends BaseProvider {
