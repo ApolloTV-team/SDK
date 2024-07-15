@@ -1,0 +1,1 @@
+{"version":3,"file":"animeProvider.d.ts","sourceRoot":"","sources":["../../../src/classes/provider/animeProvider.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,UAAU,EAAE,4BAA4B,EAAE,MAAM,cAAc,CAAC;AAC7E,OAAO,EAAE,YAAY,EAAE,MAAM,gBAAgB,CAAC;AAE9C,8BAAsB,aAAc,SAAQ,YAAY;IACtD;;;;;OAKG;IACH,QAAQ,CAAC,QAAQ,CACf,QAAQ,EAAE,UAAU,GACnB,OAAO,CAAC,KAAK,CAAC,4BAA4B,CAAC,CAAC;CAChD"}

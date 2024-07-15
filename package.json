@@ -15,7 +15,11 @@
   "repository": {
     "url": "https://github.com/ApolloTV-team/sdk"
   },
+  "scripts": {
+    "build": "tsc"
+  },
   "devDependencies": {
+    "typescript": "^5.0.0",
     "@types/bun": "latest",
     "@types/react": "^18.3.3",
     "@types/react-native": "^0.73.0"
