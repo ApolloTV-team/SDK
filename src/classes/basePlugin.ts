@@ -1,7 +1,7 @@
 import type { PluginMetadata } from "../@types";
-import type { Request } from "../utils";
+import { Request } from "../utils";
 
-export abstract class BasePlugin {
+export abstract class BasePlugin extends Request {
   abstract readonly metadata: PluginMetadata;
 
   /**
@@ -27,12 +27,4 @@ export abstract class BasePlugin {
    * @return {JSX.Element} The JSX element representing the plugin's settings interface.
    */
   abstract settings(): JSX.Element;
-
-  /**
-   * This property holds the request object that is used by the plugin.
-   * It is a protected property, meaning it can only be accessed within the plugin class itself.
-   *
-   * @type {Request} The request object used by the plugin.
-   */
-  protected abstract request: Request;
 }
